@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/index.css">
+</head>
+<body>
+    <div class="barrage">
+        <video id="myvideo" autoplay loop width="100%" height="300px">
+            <source src="video/1.mp4">
+        </video>
+        <div class="screen">
+            <div class="content">
+                <!--内容在这里显示-->
+            </div>
+        </div>
+        <!--发送对话框-->
+        <div class="send">
+            <input type="text" class="s_text" placeholder="使用回车可以快速发送弹幕"/>
+            <input type="button" class="s_btn" value="发送" />
+             <!--关闭弹幕功能-->
+            <span class="barrage_close">关闭弹幕</span>
+            <!-- 静音功能  -->
+            <span id="muted">开启静音</span>
+        </div>
+    </div>
+    <script src="js/jquery-v1.10.2.min.js"></script>
+    <script src="js/index.js"></script>
+</body>
+</html>
